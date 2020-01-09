@@ -13,5 +13,4 @@ RUN apt-get update \
 
 RUN echo "${TIME_ZONE}" > /etc/timezone && \ 
     ln -sf /usr/share/zoneinfo/${TIME_ZONE} /etc/localtime
-
-ENTRYPOINT ["/bin/bash"]
+CMD ["/bin/bash"]
